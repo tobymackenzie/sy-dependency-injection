@@ -14,6 +14,9 @@
 		,"symfony/config": ">=2.4 <4.0"
 		,"symfony/dependency-injection": ">=2.4 <4.0"
 	}
+	,"require-dev": {
+		"symfony/yaml": ">=2.4 <4.0"
+	}
 	,"autoload" : {
 		"psr-4" : {
 			"TJM\\Component\\DependencyInjection\\" : "src"
