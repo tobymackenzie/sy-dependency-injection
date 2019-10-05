@@ -1,11 +1,11 @@
 <?php
 namespace TJM\Component\DependencyInjection\Test;
 
-use PHPUnit_Framework_TestCase as Base;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use TJM\Component\DependencyInjection\Loader\MultiTypeLoader;
 
-class MultiTypeLoaderTest extends Base{
+class MultiTypeLoaderTest extends TestCase{
 	public function testMultiTypeLoad(){
 		$container = new ContainerBuilder();
 		$loader = new MultiTypeLoader($container, __DIR__ . '/../Fixtures/config');

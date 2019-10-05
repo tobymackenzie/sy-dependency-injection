@@ -1,11 +1,11 @@
 <?php
 namespace TJM\Component\DependencyInjection\Test;
 
-use PHPUnit_Framework_TestCase as Base;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use TJM\Component\DependencyInjection\Loader\MultiPathLoader;
 
-class MultiPathLoaderTest extends Base{
+class MultiPathLoaderTest extends TestCase{
 	public function testMultiPathLoad(){
 		$container = new ContainerBuilder();
 		$loader = new MultiPathLoader($container);
